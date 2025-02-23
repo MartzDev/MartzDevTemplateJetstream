@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-surface-alt dark:bg-surface-dark-alt">
+<nav x-data="{ open: false }" class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -75,13 +75,13 @@
                 @endif
 
                 <!-- Settings Dropdown -->
-                <div class="flex items-center space-x-2 ms-3 relative">
+                <div class="flex items-center ms-3 relative space-x-1">
                     <div>
                         <button
                             class="inline-flex items-center justify-center p-2 rounded-md text-gray-400
                         dark:text-gray-500 hover:text-gray-500 dark:hover:text-gray-400
-                        hover:bg-gray-100 dark:hover:bg-surface-dark focus:outline-none
-                        focus:bg-gray-100 dark:focus:bg-surface-dark  focus:text-gray-500
+                        hover:bg-gray-100 dark:hover:bg-gray-900 focus:outline-none
+                        focus:bg-gray-100 dark:focus:bg-gray-900 focus:text-gray-500
                         dark:focus:text-gray-400"
                             onclick="toggleDarkMode()">
                             <span class="block dark:hidden" title="cambiar a modo oscuro">
@@ -113,7 +113,7 @@
                             @else
                                 <span class="inline-flex rounded-md">
                                     <button type="button"
-                                            class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-surface-alt dark:bg-surface-dark-alt hover:text-gray-700 dark:hover:text-gray-300 focus:outline-hidden focus:bg-surface-alt dark:focus:bg-surface-dark-alt active:bg-surface-alt dark:active:bg-surface-dark-alt transition ease-in-out duration-150">
+                                            class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-hidden focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50 dark:active:bg-gray-700 transition ease-in-out duration-150">
                                         {{ Auth::user()->name }}
 
                                         <svg class="ms-2 -me-0.5 size-4" xmlns="http://www.w3.org/2000/svg"

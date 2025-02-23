@@ -1,7 +1,7 @@
 @props([
     'align' => 'right',
     'width' => '48',
-    'contentClasses' => 'py-1 bg-surface-alt dark:bg-surface-dark-alt',
+    'contentClasses' => 'py-1 bg-white dark:bg-gray-700',
     'dropdownClasses' => '',
 ])
 
@@ -32,7 +32,7 @@
          class="absolute z-50 mt-2 {{ $width }} rounded-md shadow-lg {{ $alignmentClasses }} {{ $dropdownClasses }}"
          style="display: none;" @click="open = false">
         <div
-            class="rounded-md ring-1 ring-surface-alt ring-opacity-5 dark:ring-surface-dark-alt dark:ring-opacity-5 {{ $contentClasses }}">
+            class="rounded-md ring-1 ring-gray-200 ring-opacity-5 dark:ring-black dark:ring-opacity-5 {{ $contentClasses }}">
             {{ $content }}
         </div>
     </div>
